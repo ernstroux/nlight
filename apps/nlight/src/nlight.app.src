@@ -1,0 +1,23 @@
+{application, nlight,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { nlight_app, []}},
+  {applications,[
+    kernel,
+    stdlib,
+    inets,
+    ssl
+   ]},
+  {env,[
+    {exchanges, [
+                  {"Luno", "ZAR"},
+                  {"Bitfinex", "USD"}
+                ]}
+    ]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
